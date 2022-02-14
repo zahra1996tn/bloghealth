@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="img-container">
       <img :src="img" class="img">
       <like  @click="like" :a="a"/>
   </div>

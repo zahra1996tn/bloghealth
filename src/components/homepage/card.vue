@@ -1,7 +1,7 @@
 <template>
-    <div class="card">
+    <div class="cus-card">
       <div class="bg-card"></div>
-      <div class="text-card">
+      <div class="txt-card">
           <h5> {{title}}</h5>
           <p> {{text}} </p>
       </div>

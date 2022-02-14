@@ -1,8 +1,11 @@
 <template>
  <div class="bg-nav">
-  <router-link to="/" class="menu-li">  <i class="fa fa-home"></i>  صفحه اصلی </router-link>
-  <router-link to="/users" class="menu-li"> <i class="fa fa-photo"></i>  کارهای روزمزه </router-link>
-  <router-link to="/gallery" class="menu-li">  <i class="fa fa-file-text-o"></i>  گالری </router-link>
+  <router-link to="/" class="menu-li">    صفحه اصلی </router-link>
+  <i class="fa fa-angle-left align-middle"></i>
+  <router-link to="/users" class="menu-li">   کارهای روزمزه </router-link>
+    <i class="fa fa-angle-left align-middle"></i>
+  <router-link to="/gallery" class="menu-li">   گالری </router-link>
+  <img src="@/assets/img/logo.png">
 </div>
 
 <router-view></router-view>

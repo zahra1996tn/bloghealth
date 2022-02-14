@@ -1,11 +1,14 @@
 <template>
-  <home />
+    <home />
+    <about :title="titleabout" :text="textabout" />
+     <div class="bg-user">
   <div class="div-input">
     <buttonadd  @click="addtodo" textbtn="افزودن" />
     <textinput  v-model="content" />
     <myapp :removetodo="removetodo" :items="items" />
   </div>
-  <about :title="titleabout" :text="textabout" />
+    </div>
+    <foter />
 </template>
 
 <script>
@@ -14,9 +17,10 @@ import Buttonadd from './userpage/buttonadd.vue'
 import Textinput from './userpage/textinput.vue'
 import myapp from './userpage/myapp.vue'
 import about from '../components/homepage/about.vue'
+import foter from '../components/homepage/foter.vue'
 import {ref} from 'vue'
 export default {
-components :{ home, Buttonadd, Textinput  , myapp , about},
+components :{ home, Buttonadd, Textinput  , myapp , about , foter},
 setup(){
   const titleabout = ref('لیست کارهای روزمره')
   const textabout = ref('اینجا میتونی کارهاتو بنویسی :)')
